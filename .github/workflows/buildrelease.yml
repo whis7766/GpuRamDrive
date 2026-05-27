@@ -13,10 +13,10 @@ jobs:
         fetch-depth: 0
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v3
-    - name: Setup CUDA  
-      uses: Jimver/cuda-toolkit@v0.2.11  
-      with:  
-        cuda: '13.2.0'
+    - name: Setup latest CUDA
+      uses: mjun0812/setup-cuda@v1
+      with:
+        version: 'latest'
     - name: Build for AMD64
       run: |
         msbuild GpuRamDrive.sln /p:Configuration=Release-CUDA /p:Platform=x64 /m
