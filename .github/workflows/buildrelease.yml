@@ -16,7 +16,7 @@ jobs:
     - name: Setup latest CUDA
       uses: mjun0812/setup-cuda@v1
       with:
-        version: 'latest'
+        version: '11.6.0'
         method: 'local'
     - name: Build for AMD64
       run: |
