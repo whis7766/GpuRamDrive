@@ -16,7 +16,7 @@ jobs:
     - name: Setup CUDA  
       uses: Jimver/cuda-toolkit@v0.2.11  
       with:  
-        cuda: '12.6.0'
+        cuda: '13.2.0'
     - name: Build for AMD64
       run: |
         msbuild GpuRamDrive.sln /p:Configuration=Release-CUDA /p:Platform=x64 /m
