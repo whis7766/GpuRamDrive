@@ -1,0 +1,48 @@
+name: Build Release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v3
+    - name: Setup CUDA  
+      uses: Jimver/cuda-toolkit@v0.2.11  
+      with:  
+        cuda: '12.6.0'
+    - name: Build for AMD64
+      run: |
+        msbuild GpuRamDrive.sln /p:Configuration=Release-CUDA /p:Platform=x64 /m
+    - name: Create Release Directory  
+      run: |  
+        New-Item -ItemType Directory -Force -Path "./artifacts"  
+        Copy-Item "./GpuRamDrive/x64/Release-CUDA/GpuRamDrive-cuda_x64.exe" -Destination "./artifacts/"  
+      shell: pwsh
+    - name: Create Archive  
+      working-directory: ./artifacts  
+      run: |  
+        Compress-Archive -Path * -DestinationPath "../GpuRamDrive-cuda-x64.zip" -Force  
+      shell: pwsh
+    - name: Create Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: "unsigned"
+        files: "./GpuRamDrive-cuda-x64.zip"
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: Mattraks/delete-workflow-runs@v2.1.0
+      if: always()
+      with:
+        token: ${{ github.token }}
+        repository: ${{ github.repository }}
+        retain_days: 0
+        keep_minimum_runs: 0
