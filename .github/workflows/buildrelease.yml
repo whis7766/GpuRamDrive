@@ -21,21 +21,11 @@ jobs:
     - name: Build for AMD64
       run: |
         msbuild GpuRamDrive.sln /p:Configuration=Release-CUDA /p:Platform=x64 /m
-    - name: Create Release Directory  
-      run: |  
-        New-Item -ItemType Directory -Force -Path "./artifacts"  
-        Copy-Item "./GpuRamDrive/x64/Release-CUDA/GpuRamDrive-cuda_x64.exe" -Destination "./artifacts/"  
-      shell: pwsh
-    - name: Create Archive  
-      working-directory: ./artifacts  
-      run: |  
-        Compress-Archive -Path * -DestinationPath "../GpuRamDrive-cuda-x64.zip" -Force  
-      shell: pwsh
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "unsigned"
-        files: "./GpuRamDrive-cuda-x64.zip"
+        files: "./GpuRamDrive/x64/Release-CUDA/GpuRamDrive-cuda_x64.exe"
         draft: false
         prerelease: false
       env:
