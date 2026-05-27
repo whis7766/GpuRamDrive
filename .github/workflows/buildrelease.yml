@@ -25,7 +25,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "unsigned"
-        files: "./GpuRamDrive/x64/Release-CUDA/GpuRamDrive-cuda_x64.exe"
+        files: "./x64/Release-CUDA/GpuRamDrive-cuda_x64.exe"
         draft: false
         prerelease: false
       env:
