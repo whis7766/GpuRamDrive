@@ -169,19 +169,19 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64;D:\Library\lib\_lib\x64</LibraryPath>
+    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
     <IncludePath>$(CUDA_PATH)\include;$(ProjectDir)3rdparty\inc;$(IncludePath)</IncludePath>
     <TargetName>$(ProjectName)_$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-OpenCL|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64;D:\Library\lib\_lib\x64</LibraryPath>
+    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
     <IncludePath>$(CUDA_PATH)\include;$(ProjectDir)3rdparty\inc;$(IncludePath)</IncludePath>
     <TargetName>$(ProjectName)_$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-CUDA|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64;D:\Library\lib\_lib\x64</LibraryPath>
+    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
     <IncludePath>$(CUDA_PATH)\include;$(ProjectDir)3rdparty\inc;$(IncludePath)</IncludePath>
     <TargetName>$(ProjectName)_$(PlatformTarget)</TargetName>
   </PropertyGroup>
@@ -199,13 +199,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64;D:\Library\lib\_lib\x64</LibraryPath>
+    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
     <IncludePath>$(CUDA_PATH)\include;$(ProjectDir)3rdparty\inc;$(IncludePath)</IncludePath>
     <TargetName>$(ProjectName)_$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-CUDA|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64;D:\Library\lib\_lib\x64</LibraryPath>
+    <LibraryPath>$(CUDA_PATH)\lib\$(Platform);$(ProjectDir)3rdparty\lib\$(Platform);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
     <IncludePath>$(CUDA_PATH)\include;$(ProjectDir)3rdparty\inc;$(IncludePath)</IncludePath>
     <TargetName>$(ProjectName)-cuda_$(PlatformTarget)</TargetName>
   </PropertyGroup>
