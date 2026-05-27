@@ -17,6 +17,7 @@ jobs:
       uses: mjun0812/setup-cuda@v1
       with:
         version: 'latest'
+        method: 'local'
     - name: Build for AMD64
       run: |
         msbuild GpuRamDrive.sln /p:Configuration=Release-CUDA /p:Platform=x64 /m
