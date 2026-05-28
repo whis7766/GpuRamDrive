@@ -220,7 +220,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-OpenCL|Win32'">
@@ -234,7 +234,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-CUDA|Win32'">
@@ -248,7 +248,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -262,7 +262,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-OpenCL|x64'">
@@ -276,7 +276,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-CUDA|x64'">
@@ -290,7 +290,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -312,7 +312,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-CUDA|Win32'">
@@ -334,7 +334,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -356,7 +356,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-CUDA|x64'">
@@ -378,7 +378,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACExecutionLevel>highestAvailable</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
